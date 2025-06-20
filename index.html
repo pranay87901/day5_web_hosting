@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Pranay | Portfolio</title>
   <style>
     * {
@@ -13,7 +13,10 @@
 
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(to right, #000000, #434343);
+      background: url('https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1350&q=80') no-repeat center center fixed;
+      background-size: cover;
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
       color: white;
       display: flex;
       flex-direction: column;
@@ -22,7 +25,14 @@
       min-height: 100vh;
       text-align: center;
       padding: 20px;
-      animation: fadeIn 2s ease-in-out;
+    }
+
+    .overlay {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+      animation: fadeIn 2s ease;
     }
 
     .profile-img {
@@ -45,22 +55,27 @@
       font-size: 1.2rem;
       max-width: 600px;
       margin-bottom: 30px;
-      opacity: 0.85;
+      opacity: 0.9;
     }
 
     .buttons a {
       text-decoration: none;
       color: white;
-      background-color: #6c63ff;
-      padding: 10px 20px;
+      background: rgba(0, 0, 0, 0.5);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(4px);
+      -webkit-backdrop-filter: blur(4px);
+      padding: 10px 25px;
       margin: 10px;
-      border-radius: 25px;
+      border-radius: 30px;
       font-weight: bold;
-      transition: background 0.3s ease;
+      transition: all 0.3s ease;
+      display: inline-block;
     }
 
     .buttons a:hover {
-      background-color: #4e4cb7;
+      background: rgba(255, 255, 255, 0.1);
+      transform: scale(1.05);
     }
 
     @keyframes fadeIn {
@@ -80,14 +95,17 @@
   </style>
 </head>
 <body>
-  <img src="https://i.imgur.com/8Km9tLL.jpg" alt="Profile" class="profile-img" />
-  <h1>Hi, I'm Pranay 🚀</h1>
-  <p>Aspiring software engineer learning DevOps & Cloud. This is my portfolio site hosted with GitHub Pages.</p>
-
-  <div class="buttons">
-    <a href="https://github.com/pranay87901" target="_blank">GitHub</a>
-    <a href="https://instagram.com/pranay87901" target="_blank">Instagram</a>
+  <div class="overlay">
+    <img src="https://i.imgur.com/8Km9tLL.jpg" alt="Profile" class="profile-img" />
+    <h1>Hello, I'm Pranay 🚀</h1>
+    <p>Aspiring software engineer learning DevOps & Cloud. Welcome to my cinematic portfolio site!</p>
+    <div class="buttons">
+      <a href="https://github.com/pranay87901" target="_blank">GitHub</a>
+      <a href="https://instagram.com/pranay87901" target="_blank">Instagram</a>
+    </div>
   </div>
 </body>
 </html>
+
+
 
