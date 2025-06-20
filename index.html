@@ -13,10 +13,9 @@
 
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: url('https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1350&q=80') no-repeat center center fixed;
+      background: linear-gradient(145deg, #000000, #1c1c1c);
+      background-attachment: fixed;
       background-size: cover;
-      backdrop-filter: blur(8px);
-      -webkit-backdrop-filter: blur(8px);
       color: white;
       display: flex;
       flex-direction: column;
@@ -31,8 +30,10 @@
       background: rgba(0, 0, 0, 0.6);
       padding: 40px;
       border-radius: 20px;
-      box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+      box-shadow: 0 0 40px rgba(0, 255, 255, 0.3), 0 0 80px rgba(0, 255, 255, 0.1);
       animation: fadeIn 2s ease;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
     }
 
     .profile-img {
@@ -40,15 +41,17 @@
       height: 150px;
       border-radius: 50%;
       object-fit: cover;
-      box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+      box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
       margin-bottom: 20px;
       animation: zoomIn 1.2s ease-in;
+      border: 2px solid rgba(0, 255, 255, 0.3);
     }
 
     h1 {
       font-size: 2.5rem;
       margin-bottom: 10px;
       animation: slideIn 1s ease-in-out;
+      text-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
     }
 
     p {
@@ -61,21 +64,21 @@
     .buttons a {
       text-decoration: none;
       color: white;
-      background: rgba(0, 0, 0, 0.5);
-      border: 1px solid rgba(255, 255, 255, 0.2);
-      backdrop-filter: blur(4px);
-      -webkit-backdrop-filter: blur(4px);
+      background: rgba(0, 0, 0, 0.7);
+      border: 1px solid rgba(0, 255, 255, 0.3);
       padding: 10px 25px;
       margin: 10px;
       border-radius: 30px;
       font-weight: bold;
       transition: all 0.3s ease;
       display: inline-block;
+      box-shadow: 0 0 10px rgba(0, 255, 255, 0.4), inset 0 0 10px rgba(0, 255, 255, 0.2);
     }
 
     .buttons a:hover {
-      background: rgba(255, 255, 255, 0.1);
+      background: rgba(0, 255, 255, 0.1);
       transform: scale(1.05);
+      box-shadow: 0 0 20px rgba(0, 255, 255, 0.5), inset 0 0 20px rgba(0, 255, 255, 0.3);
     }
 
     @keyframes fadeIn {
@@ -96,7 +99,7 @@
 </head>
 <body>
   <div class="overlay">
-    <img src="https://i.imgur.com/8Km9tLL.jpg" alt="Profile" class="profile-img" />
+    <img src="pranay.jpg" alt="Profile" class="profile-img" />
     <h1>Hello, I'm Pranay 🚀</h1>
     <p>Aspiring software engineer learning DevOps & Cloud. Welcome to my cinematic portfolio site!</p>
     <div class="buttons">
@@ -106,6 +109,8 @@
   </div>
 </body>
 </html>
+
+
 
 
 
